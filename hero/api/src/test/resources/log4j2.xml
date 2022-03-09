@@ -1,0 +1,13 @@
+<Configuration>
+  <Appenders>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yy/MM/dd HH:mm:ss} %-5p %c{2} %M %-30m %t %n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.hero" level="INFO"/>
+    <Root level="ERROR">
+      <AppenderRef ref="STDOUT"/>
+    </Root>
+  </Loggers>
+</Configuration>

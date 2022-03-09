@@ -1,0 +1,3 @@
+INSERT INTO superhero.hero_power (id_power, power_name, damage, element) VALUES (NEXTVAL('superhero.hero_seq_power'), 'Lanzallamas', '160', 'Fuego');
+
+INSERT INTO superhero.hero_superhero (id_hero, hero_name, id_power, alive, description, age, health, resistance) VALUES (NEXTVAL('superhero.hero_seq_superhero'), 'Charmander', (select id_power from superhero.hero_power where power_name = 'Lanzallamas'), true, 'pokemon fuego', 2, 100, 80);
